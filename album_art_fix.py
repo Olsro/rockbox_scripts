@@ -39,7 +39,8 @@ def handle_audio_files(directory: str, temp_folder: str):
         try:
             os.makedirs(temp_folder_path, exist_ok=True)
 
-            encoding = sys.stdout.encoding or "utf-8"
+            #encoding = sys.stdout.encoding or "utf-8"
+            encoding = "latin1"
             temp_cover_path = os.path.join(temp_folder_path, COVER_FILENAME)
             print(f"Running ffmpeg command for '{audio_file_path}'")
             result = subprocess.run(
