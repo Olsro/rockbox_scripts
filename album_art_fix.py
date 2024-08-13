@@ -6,7 +6,7 @@ import tempfile
 from PIL import Image, UnidentifiedImageError
 from mutagen import File
 
-SUPPORTED_EXTENSIONS = (".mp3", ".flac")
+SUPPORTED_EXTENSIONS = (".mp3", ".flac", ".m4a", ".mpc", ".opus")
 IMAGE_EXTENSIONS = (".jpg", ".jpeg", ".png")
 COVER_FILENAME = "cover.jpg"
 TEMP_FOLDER_NAME = "cover_extraction_temp"
